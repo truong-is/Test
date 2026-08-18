@@ -36,6 +36,7 @@ header{
     z-index: 1000;
     padding: 20px 10%;
     background: var(--bg-color);
+    padding: 17px 5%;
     box-shadow: 0 2px 5px -2px #0000001a;
     transition: all .6s ease;
 }
@@ -43,6 +44,7 @@ header{
 .logo img{
     max-width: 180px;
     width: 100%;
+    max-width: 250px;
     height: 100%;
     object-fit: contain;
 }
@@ -54,6 +56,10 @@ header{
 
 .navlist a{
     display: inline-block;
+    padding: 2px 0;
+    margin: 0 30px;
+    font-size: 19px;
+    font-weight: 600;
     color: var(--text-color);
     font-size: var(--p-font);
     margin: 0 30px;
@@ -66,6 +72,7 @@ header{
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
 }
+
 
 .nav-content{
     display: flex;
@@ -90,7 +97,6 @@ header{
     font-size: 32px;
     z-index: 10001;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 section{
@@ -115,6 +121,7 @@ section{
     font-size: var(--h1-font);
     font-weight: 700;
     color: var(--bg-color);
+    line-height: 1.1;
     margin: 10px 0 20px;
     line-height: 1;
 }
@@ -139,9 +146,11 @@ section{
     padding: 17px 50px;
     font-size: 16px;
     font-weight: 600;
+    letter-spacing: 2px;
     color: var(--bg-color);
     letter-spacing: 2px;
     border: 1px solid var(--bg-color);
+    margin-top: 20px;
     transition: all .6s ease;
 }
 
@@ -155,31 +164,33 @@ section{
 }
 
 .center-text h6{
+    font-size: 20px;
+    font-weight: 500;
     color: var(--main-color);
     font-size: 17px;
     font-weight: 500;
 }
 
 .center-text h2{
-    color: var(--text-color);
-    font-size: var(--h2-font);
+    font-size: 40px;
     font-weight: 700;
+    color: var(--text-color);
 }
 
 .store-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
     gap: 4rem;
     margin: 1.5rem;
-    align-items: center;
 }
 
 .col{
     display: flex;
-    border: 1px solid var(--text-color);
-    border-radius: 10px;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
     padding: 10px;
     gap: 30px;
     cursor: pointer;
@@ -202,6 +213,7 @@ section{
 .col-text p{
     font-size: 17px;
     font-weight: 500;
+    color: var(--text-color);
 }
 
 .col:hover{
